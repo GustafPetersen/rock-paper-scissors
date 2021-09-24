@@ -22,9 +22,9 @@ function gamePlay(userSelect, computerPlay) {
     // userSelect = prompt("Select Rock, Paper or Scissors: ")
     const unitArray = ["rock", "paper", "scissors"];
     userSelect = unitArray[Math.floor(Math.random()*unitArray.length)];
-    userSelect = userSelect.toLowerCase()
-    let scoreComp = 0;
-    let scoreUser = 0;
+    // userSelect = userSelect.toLowerCase()
+    let scoreComp;
+    let scoreUser;
 
     /*
     If, else if, and else statements determining whether the user or the computer wins.
@@ -34,22 +34,22 @@ function gamePlay(userSelect, computerPlay) {
     
     if (userSelect === "rock" && computerPlay === "paper") {
         scoreComp += 1
-        console.log("the score is: " + "user score: " + scoreUser " and " + "computer score: " + scoreComp)
+        console.log("the score is: " + "user score: " + scoreUser + " and " + "computer score: " + scoreComp)
     } else if (userSelect === "rock" && computerPlay === "scissors") {
         scoreUser += 1
-        console.log("the score is: " + "user score: " + scoreUser " and " + "computer score: " + scoreComp)
+        console.log("the score is: " + "user score: " + scoreUser + " and " + "computer score: " + scoreComp)
     } else if(userSelect === "scissors" && computerPlay === "rock") {
         scoreComp += 1
-        console.log("the score is: " + "user score: " + scoreUser " and " + "computer score: " + scoreComp)
+        console.log("the score is: " + "user score: " + scoreUser + " and " + "computer score: " + scoreComp)
     } else if (userSelect === "scissors" && computerPlay === "paper") {
         scoreUser += 1
-        console.log("the score is: " + "user score: " + scoreUser " and " + "computer score: " + scoreComp)
+        console.log("the score is: " + "user score: " + scoreUser + " and " + "computer score: " + scoreComp)
     } else if (userSelect === "paper" && computerPlay === "rock") {
         scoreUser += 1
-        console.log("the score is: " + "user score: " + scoreUser " and " + "computer score: " + scoreComp)
+        console.log("the score is: " + "user score: " + scoreUser + " and " + "computer score: " + scoreComp)
     } else if (userSelect === "paper" && computerPlay === "scissor") {
         scoreComp += 1
-        console.log("the score is: " + "user score: " + scoreUser " and " + "computer score: " + scoreComp)
+        console.log("the score is: " + "user score: " + scoreUser + " and " + "computer score: " + scoreComp)
     } else {
         scoreComp += 0;
         scoreUser += 0;
