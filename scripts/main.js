@@ -6,7 +6,8 @@ which corresponds to either rock paper or scissors.
 */
 const gameState = {
     scoreComp: 0,
-    scoreUser: 0
+    scoreUser: 0,
+    // scoreTotal: scoreUser + scoreComp
 }
 
 const gameOutcome = {
@@ -36,7 +37,8 @@ function gamePlay() {
     // userSelect = unitArray[Math.floor(Math.random()*unitArray.length)];
     const computerSelect = computerPlay();
 
-    console.log(computerSelect)
+    console.log("The computer chose: " + computerSelect)
+    console.log("You chose : " + userSelect)
     /*
     If, else if, and else statements determining whether the user or the computer wins.
     if the computer wins its score increments with one.
@@ -56,14 +58,13 @@ function gamePlay() {
     } else if (userSelect === "paper" && computerSelect === "scissor") {
         return gameOutcome.COMPUTERWIN
     } else {
-        scoreComp += 0;
-        scoreUser += 0;
+        return gameOutcome.TIE
     }
 
-    console.log(scoreComp, scoreUser)
+    console.log(gameState.scoreComp, gameState.scoreUser)
 }
 
-while(true) {
+/* while(true) {
     const result = gamePlay()
     switch (result){
         case gameOutcome.COMPUTERWIN:
@@ -75,7 +76,10 @@ while(true) {
     
     }
     console.log("the score is: " + "user score: " + gameState.scoreUser + " and " + "computer score: " + gameState.scoreComp)
+    alert("the score is: " + "user score: " + gameState.scoreUser + " and " + "computer score: " + gameState.scoreComp)
 }
+*/
+
 /* 
 while function to loop the gamePlay function while the score (i) is still below 5 (?) 
 for any player

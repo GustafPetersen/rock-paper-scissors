@@ -1,0 +1,32 @@
+body {
+    margin: 5% 10% 5% 10%;
+    color: white;
+    background: linear-gradient(140deg, rgba(16, 235, 206, 0.95) 15%,rgb(220, 20, 60, 0.95) 70%);
+    font-family: fantasy;
+    font-size: larger;
+}
+.round-gradient {
+    height: 200px;
+    width: 200px;
+    background: radial-gradient(rgba(blue), rgba(white))
+}
+.first-third {
+    margin: 5% 10% 5% 10%;
+    padding: 2.5% 5% 2.5% 5%;
+}
+.second-third {
+    display: flex;
+    margin: 5% 10% 5% 10%;
+    padding: 2.5% 5% 2.5% 5%;
+    align-items: center;
+    justify-content: center;
+}
+.button {
+    display: flex;
+    padding: 2% 2% 2% 2%;
+    align-items: stretch;
+    justify-content: center;
+}
+.last-third {
+
+}
