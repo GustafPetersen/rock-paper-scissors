@@ -1,15 +1,15 @@
 body {
     margin: 5% 10% 5% 10%;
-    color: white;
-    background: linear-gradient(140deg, rgba(16, 235, 206, 0.95) 15%,rgb(220, 20, 60, 0.95) 70%);
-    font-family: fantasy;
-    font-size: larger;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-image: linear-gradient(#d4d4d4, #646464 40%);
+    /* background-image: url("/images/space-background.jpeg"); */
+    /* background-size: 100% 100%; */
+    font-family: monospace;
+    font-size: medium;
 }
-.round-gradient {
-    height: 200px;
-    width: 200px;
-    background: radial-gradient(rgba(blue), rgba(white))
-}
+
+
 .first-third {
     margin: 5% 10% 5% 10%;
     padding: 2.5% 5% 2.5% 5%;
@@ -23,10 +23,15 @@ body {
 }
 .button {
     display: flex;
+    margin: 2%;
     padding: 2% 2% 2% 2%;
     align-items: stretch;
     justify-content: center;
+    height: 25%;
+    width: 25%;
 }
 .last-third {
-
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
 }

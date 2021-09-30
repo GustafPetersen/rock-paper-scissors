@@ -5,22 +5,27 @@
 
 <body>
     <div class="first-third">
-        <p class="init-text">
+        <h1 class="init-text">
             The world depends on you. An alien race has invaded earth and plan to destroy humanity. You are mankinds last hope.
             The aliens regard the ancient practice of rock paper scissors as the ultimate trial of fate, where you will face an alien champion.
             The future of humanity literally lies in your hands, choose well or the world will be in turmoil.
-        </p>    
+        </h1>    
     </div>
     <div class="second-third">
-        <input type="button" class="button" id="rock" value="Rock">
-        <input type="button" class="button" id="paper" value="Paper">
-        <input type="button" class="button" id="scissor" value="Scissor">
+        <input type="image" class="button" id="rock" onclick="gamePlay(userImageSelect.ROCK)" src="images/noun_Fist_477918.png")>
+        <input type="image" class="button" id="paper" onclick="gamePlay(userImageSelect.PAPER)" src="images/noun_Hand_477922.png">
+        <input type="image" class="button" id="scissors" onclick="gamePlay(userImageSelect.SCISSORS)" src="images/noun_Scissors_477919.png">
     </div>
     
     <div class="last-third">
-        <p class="output-text"></p>
+        <h1>
+            <ol class="scoreboard">
+                <li class="user-score">Your Score: </li>
+                <li class="computer-score">Alien Score: </li>
+                <li class="games-left">Games left: 5</li>
+            </ol>
+        </h1>
     </div>
-    <div class="round-gradient"></div>
 </body>
 
 <script type="text/javascript" src="scripts/main.js">
