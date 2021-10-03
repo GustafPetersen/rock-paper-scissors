@@ -16,7 +16,7 @@ body {
 }
 .second-third {
     display: flex;
-    margin: 5% 10% 5% 10%;
+    margin: 2.5% 10% 2.5% 10%;
     padding: 2.5% 5% 2.5% 5%;
     align-items: center;
     justify-content: center;
