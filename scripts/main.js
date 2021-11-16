@@ -50,48 +50,52 @@ function gamePlay(userInput) {
     if the computer wins its score increments with one.
     if the user wins, their score increments with one.
     */
+
+    const containerUserScore = document.getElementById("user-score");
+    const containerComputerScore = document.getElementsById("computer-score");
+    const containerGamesLeft = document.getElementsById("games-left")
     
     if (userSelect === "rock" && computerSelect === "paper") {
         console.log(gameOutcome.COMPUTERWIN)
         gameState.SCORECOMP += 1
-        document.getElementsByClassName("user-score").innerHTML = "Your score: " + gameState.SCOREUSER;
-        document.getElementsByClassName("computer-score").innerHTML = "Alien score: " + gameState.SCORECOMP;
-        document.getElementsByClassName("games-left").innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
+        containerUserScore.innerHTML = "Your score: " + gameState.SCOREUSER;
+        containerComputerScore.innerHTML = "Alien score: " + gameState.SCORECOMP;
+        containerGamesLeft.innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
         return gameOutcome.COMPUTERWIN;
     } else if (userSelect === "rock" && computerSelect === "scissors") {
         console.log(gameOutcome.USERWIN)
         gameState.SCOREUSER += 1
         document.getElementsByClassName("user-score").innerHTML = "Your score: " + gameState.SCOREUSER;
-        document.getElementsByClassName("computer-score").innerHTML = "Alien score: " + gameState.SCORECOMP;
-        document.getElementsByClassName("games-left").innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
+        containerComputerScore.innerHTML = "Alien score: " + gameState.SCORECOMP;
+        containerGamesLeft.innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
         return gameOutcome.USERWIN
     } else if(userSelect === "scissors" && computerSelect === "rock") {
         console.log(gameOutcome.COMPUTERWIN)
         gameState.SCOREUSER += 1
         document.getElementsByClassName("user-score").innerHTML = "Your score: " + gameState.SCOREUSER;
-        document.getElementsByClassName("computer-score").innerHTML = "Alien score: " + gameState.SCORECOMP;
-        document.getElementsByClassName("games-left").innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
+        containerComputerScore.innerHTML = "Alien score: " + gameState.SCORECOMP;
+        containerGamesLeft.innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
         return gameOutcome.COMPUTERWIN
     } else if (userSelect === "scissors" && computerSelect === "paper") {
         console.log(gameOutcome.USERWIN)
         gameState.SCOREUSER += 1
         document.getElementsByClassName("user-score").innerHTML = "Your score: " + gameState.SCOREUSER;
-        document.getElementsByClassName("computer-score").innerHTML = "Alien score: " + gameState.SCORECOMP;
-        document.getElementsByClassName("games-left").innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
+        containerComputerScore.innerHTML = "Alien score: " + gameState.SCORECOMP;
+        containerGamesLeft.innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
         return gameOutcome.USERWIN
     } else if (userSelect === "paper" && computerSelect === "rock") {
         console.log(gameOutcome.USERWIN)
         gameState.SCOREUSER += 1
         document.getElementsByClassName("user-score").innerHTML = "Your score: " + gameState.SCOREUSER;
-        document.getElementsByClassName("computer-score").innerHTML = "Alien score: " + gameState.SCORECOMP;
-        document.getElementsByClassName("games-left").innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
+        containerComputerScore.innerHTML = "Alien score: " + gameState.SCORECOMP;
+        containerGamesLeft.innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
         return gameOutcome.USERWIN
-    } else if (userSelect === "paper" && computerSelect === "scissor") {
+    } else if (userSelect === "paper" && computerSelect === "scissors") {
         console.log(gameOutcome.COMPUTERWIN)
         gameState.SCOREUSER += 1
         document.getElementsByClassName("user-score").innerHTML = "Your score: " + gameState.SCOREUSER;
-        document.getElementsByClassName("computer-score").innerHTML = "Alien score: " + gameState.SCORECOMP;
-        document.getElementsByClassName("games-left").innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
+        containerComputerScore.innerHTML = "Alien score: " + gameState.SCORECOMP;
+        containerGamesLeft.innerHTML = "Your score: " + (5 - (gameState.SCORECOMP + gameState.SCOREUSER));
         return gameOutcome.COMPUTERWIN
     } else {
         console.log(gameOutcome.TIE)
