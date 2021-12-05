@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="stylesheet.css">
+       
     </head>
 
 <body>
@@ -16,8 +17,11 @@
         <input type="image" class="button" id="paper" onclick="gamePlay(userImageSelect.PAPER)" src="images/noun_Hand_477922.png">
         <input type="image" class="button" id="scissors" onclick="gamePlay(userImageSelect.SCISSORS)" src="images/noun_Scissors_477919.png">
     </div>
-    
+    <!-- onclick="gamePlay(userImageSelect.ROCK)" --> 
+    <p class="game-update">
+    </p>
     <div class="last-third">
+
         <h1>
             <ul class="scoreboard">
                 <li class="user-score">Your Score: 0</li>
@@ -26,8 +30,8 @@
             </ul>
         </h1>
     </div>
-</body>
 
+</body>
 <script type="text/javascript" src="scripts/main.js">
 </script>
 

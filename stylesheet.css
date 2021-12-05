@@ -30,6 +30,11 @@ body {
     height: 25%;
     width: 25%;
 }
+.game-update {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .last-third {
     display: flex;
     align-items:baseline;
